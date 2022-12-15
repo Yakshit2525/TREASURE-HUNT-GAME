@@ -1,0 +1,30 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Yakshit Aggarwal
+Student ID#: 175307214
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. Structure Reportdata used in my programs requires a lot of memory because I have 3 int type of variables which means that 3*4=12 bytes after this I have 6 double types of variables 6*8 = 48 bytes. Hence, this structure takes 48+12=60 bytes of storage.  passing this information to the functions improves memory management because when we code the definition of any function, it can be called whenever we need that information so it will not contain unnecessary space.
+
+struct ReportData
+{
+    int skuNumber;
+    double productPrice;
+    int calories;
+    double productWeightPounds;
+    double productWeightKilos;
+    int productWeightGrams;
+    double servings;
+    double costPerServing;
+    double costCaloriesPerServing;
+};
+
+  Here, I have to use the structure for every statement to print it but if I have passed it into the function in that case I just have to call the function and it would have taken less space too.
+
+2. Both CatfoodInfo and ReportData structures contain 4 common members. so it is taking more space as they are defined in both structures separately. This situation could have been improved by making a separate function for the member of the structure defined in Catfoodinfo so that we can easily call that function in the REportdata structure which will definitely take less space in memory too. Also, during the display report data function, we have to call that function in order to print the values of those members in that function.  
+
